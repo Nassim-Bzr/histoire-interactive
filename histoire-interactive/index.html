@@ -8,12 +8,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   
-  <body class="bg-green-100 h-20">
-    
-    <header>
-      <h1 class="text-white">FRAN</h1>
-      <nav>
-        <ul class="flex">
+  <body class="bg-green h-20">
+    <header class="flex justify-between">
+      <h1 class="text-black font-bold">FRAN</h1>
+      <nav class="">
+        <ul class="flex justify-between items-center gap-5">
           <li>Contact</li>
           <li>Connexion</li>
           <li class="border border-black p-1">Inscription</li>
@@ -21,53 +20,51 @@
       </nav>
     </header>
     <main>
-      <section id="hero">
-        <img src="" alt="">
-        <h2></h2>
-        <p></p>
+      <section id="hero" class="flex justify-around">
+        <img class="max-w-30" src="https://picsum.photos/id/58/1980/1024" alt="Illustration">
+        <aside>
+          <h2>Histoire interactive</h2>
+          <p>Un aventurier trouve trois portes dans un vieux temple inca</p>
+        </aside>
       </section>
       <section id="rules">
-        <h2>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+        <h2>Règles</h2>
+          <p class="text-italic">Vous prenez le contrôle des décisions du héros! A chaque péripetie un choix sera disponible</p>
+          <ul class="list-disc">
+            <li>Chaque choix permet d'accéder à la suite de l'histoire</li>
+            <li>Trois choix sont disponibles par page</li>
+            <li>Un des choix conduit a un Game-Over, un autre a une des fins</li>
             <li></li>
           </ul>
-        </h2>
       </section>
       <section id="choices">
-        <article class="cards">
-          <ul>
+        <article class="cards flex justify-around">
+          <ul class="w-[80%] mx-auto">
             <li>
-              <figure>
-                <img src="" alt="">
-                <figcaption>
-                  <h2></h2>
-                  <p></p>
-                </figcaption>
-              </figure>
+              <a href="passe/1-1.html">
+                <figure class="w-[30%]">
+                  <img src="https://picsum.photos/id/55/1980/1024" alt="">
+                  <figcaption>
+                    <h2>Aller dans le passé</h2>
+                    <p>La porte indique </p>
+                    <i> Cherche Jadis la raison de ta présence</i>
+                  </figcaption>
+                </figure>
+              </a>
             </li>
             <li>
-              <figure>
-                <img src="" alt="">
-                <figcaption>
-                  <h2></h2>
-                  <p></p>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <img src="" alt="">
-                <figcaption>
-                  <h2></h2>
-                  <p></p>
-                </figcaption>
-              </figure>
+              <a href="passe/1-1.html">
+                <figure class="w-[30%]">
+                  <img src="https://picsum.photos/id/55/1980/1024" alt="">
+                  <figcaption>
+                    <h2>Aller dans le présent</h2>
+                    <p>La porte indique </p>
+                    <i> Cherche Jadis la raison de ta présence</i>
+                  </figcaption>
+                </figure>
+              </a>
             </li>
           </ul>
-        </article>
       </section>
     </main>
   </body>
