@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"  class="scroll-smooth overflow-hidden">
+<html lang="fr"  class="scroll-smooth overflow-hidden">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -7,6 +7,7 @@
     <title>Histoire interactive</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   
   <body class="bg-[url(./assets/images/bgInit2.webp)] bg-fixed bg-no-repeat bg-cover">
@@ -18,7 +19,7 @@
         <li><a href="#hero">A propos</a></li>
         <li><a href="#rules">Règles</a></li>
         <li><a href="#choices">Choix</a></li>
-        <li><a href="#contact">Crédits</a></li>
+        <li><a href="#credits">Crédits</a></li>
       </ul>
       <nav class="flex justify-between">
         <ul class="flex justify-between items-center gap-5">
@@ -29,11 +30,20 @@
       </nav>
     </header>
     <main class="my-[10vh]">
-      <section id="hero" class="flex justify-around grid place-center my-5 h-[100vh]">
+      <section id="landing" class="flex justify-around items-center h-[100vh]">
+        <article class="text-5xl bold text-center sticky top-0 left-0 scr backdrop-blur p-5 text-center text-white place-center">
+          <h2 class="text-bold">Les Échos du Temps : </h2>
+          <i class="text-2xl">À la Recherche de l'Origine Perdue</i>
+        </article>
+      </section>
+      <section id="hero" class="flex justify-around grid place-center my-5 h-[100vh] grid place-center">
         <article class="flex justify-around items-center">
           <img class="w-[30%] rounded-xl border-2" src="./assets/images/persoprincipal.png" alt="Illustration">
           <aside class="overflow-y-scroll text-2xl bg-[rgba(0,0,0,.6)] text-white rounded-xl border border-1 shadow-lg backdrop-blur-xl w-[50%] min-h-[50vh] max-h-[80vh] grid items-center p-10">
-            <h2 class="text-5xl bold text-center">Histoire interactive</h2>
+            <div class="text-5xl bold text-center sticky top-0 left-0 scr backdrop-blur p-5 rounded-2xl-2xl-0-0">
+              <h2>Les Échos du Temps : </h2>
+              <i class="text-2xl">À la Recherche de l'Origine Perdue</i>
+            </div>
             <p class="py-5">
               Dans les méandres d'une vie ordinaire, un jeune homme se trouve projeté dans une quête vertigineuse à la découverte de ses origines insoupçonnées. Un secret sombre et troublant émerge de l'ombre, ébranlant ses certitudes et éveillant en lui une soif inextinguible de vérité. Il s'engage alors dans un périple semé d'embûches, déterminé à percer le mystère qui entoure son existence.
             </p>
@@ -66,7 +76,7 @@
             <li class="rounded w-[20%] p-5 bg-[rgba(0,100,0,.5)] backdrop-blur text-white">
               <a href="./Passe/1-1.html">
                 <figure>
-                  <img src="https://picsum.photos/id/81/1980/1024" alt="">
+                  <img src="./assets/images/forrest-mist.png" alt="">
                   <figcaption class="flex text-center items-center min-h-[15vh] flex-col py-5">
                     <h2 class="text-2xl py-5">Aller dans le passé</h2>
                     <p>La porte indique </p>
@@ -78,11 +88,11 @@
             <li class="rounded w-[20%] p-5 bg-[rgba(0,0,0,.5)] backdrop-blur text-white">
               <a href="./Present/index.html">
                 <figure>
-                  <img src="https://picsum.photos/id/9/1980/1024" alt="">
+                  <video src="./assets/videos/water.mp4" alt="video présent" muted autoplay></video>
                   <figcaption class="flex text-center items-center h-[15vh] flex-col py-5">
                     <h2 class="text-2xl py-5">Aller dans le présent</h2>
                     <p>La porte indique </p>
-                    <i class="py-2 text-[pink]"> Cherche Ailleurs la raison de ta présence</i>
+                    <i class="py-2 text-orange-400"> Cherche Ailleurs la raison de ta présence</i>
                   </figcaption>
                 </figure>
               </a>
@@ -90,11 +100,11 @@
             <li class="rounded w-[20%] p-5 bg-[rgba(255,50,100,.4)] backdrop-blur text-white">
               <a href="./Futur/index.html">
                 <figure>
-                  <img src="https://picsum.photos/id/1002/1980/1024" alt="">
+                  <img src="./assets/images/future_link.webp" alt="">
                   <figcaption class="flex text-center items-center h-[15vh] flex-col py-5">
                     <h2 class="text-2xl py-5">Aller dans le Futur</h2>
                     <p>La porte indique </p>
-                    <i class="py-2 text-[darkviolet]"> Cherche Demain la raison de ta présence</i>
+                    <i class="py-2 text-pink-200"> Cherche Demain la raison de ta présence</i>
                   </figcaption>
                 </figure>
               </a>
@@ -131,5 +141,9 @@
         </form>
       </section>
     </main>
+    <footer class="h-[85vh] grid items-center w-[90%] mx-auto bg-[rgba(100,100,100,.3)] backdrop-blur-l border p-5 rounded-xl text-white">
+      <h2 class="text-center text-5xl">Credits</h2>
+      <iframe id="credits" src="./assets/credits.html" class="p-10 rounded-xl w-[90%] mx-auto bg-white h-full overflow-y-scroll"></iframe>
+    </footer>
   </body>
 </html>
