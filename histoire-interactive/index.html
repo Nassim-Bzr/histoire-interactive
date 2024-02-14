@@ -31,14 +31,16 @@
       <section id="hero" class="flex justify-around grid place-center my-5 h-[100vh]">
         <article class="flex justify-around items-center">
           <img class="w-[30%] rounded-xl border-2" src="./assets/images/persoprincipal.png" alt="Illustration">
-          <aside class="text-2xl bg-[rgba(0,0,0,.6)] text-white rounded-xl border border-1 shadow-lg backdrop-blur-xl w-[50%] h-[50vh] grid items-center p-10">
+          <aside class="overflow-y-scroll text-2xl bg-[rgba(0,0,0,.6)] text-white rounded-xl border border-1 shadow-lg backdrop-blur-xl w-[50%] min-h-[50vh] max-h-[80vh] grid items-center p-10">
             <h2 class="text-5xl bold text-center">Histoire interactive</h2>
-            <p class="">
+            <p class="py-5">
               Dans les méandres d'une vie ordinaire, un jeune homme se trouve projeté dans une quête vertigineuse à la découverte de ses origines insoupçonnées. Un secret sombre et troublant émerge de l'ombre, ébranlant ses certitudes et éveillant en lui une soif inextinguible de vérité. Il s'engage alors dans un périple semé d'embûches, déterminé à percer le mystère qui entoure son existence.
+            </p>
+            <p class="py-5">
               Au fil de son voyage, il découvre l'impensable : son sang n'est pas tout à fait humain, teinté d'une étrange couleur rosée à la texture gluante. Cette révélation déchirante le pousse à explorer des territoires inconnus, à défier des forces obscures et à affronter ses propres démons intérieurs.
               Guidé par une volonté farouche et alimenté par le désir ardent de comprendre, il se lance dans une quête effrénée, traversant les époques et les dimensions pour démêler les fils de son histoire. Sur son chemin, il rencontre des alliés précieux, des amis fidèles prêts à le soutenir dans cette quête périlleuse.
             </p>
-            <p>  
+            <p class="py-5">
               Mais au moment crucial, alors qu'il se tient au seuil du temps, le jeune homme doit faire un choix déterminant : vers quelle époque voyager pour découvrir la vérité sur ses origines ? Devra-t-il plonger dans les méandres du passé, explorer les secrets enfouis de ses ancêtres ? Ou bien se tourner vers l'avenir, défiant l'inconnu pour percer les mystères qui façonnent son destin ?  
               Dans un ultime acte de bravoure, il se décide, conscient que le véritable voyage ne réside pas dans les époques traversées, mais dans la quête intérieure qui le guide. Et c'est avec cette certitude chevillée au cœur qu'il s'élance vers l'inconnu, prêt à affronter son destin avec courage et détermination.
             </p>
@@ -48,7 +50,7 @@
       <section id="rules" class="h-screen py-10 bg-[rgba(255,100,100,.1)] flex-column justify-between w-[80%] mx-auto items-center">
         <h2 class="text-4xl font-thin">Règles</h2>
           <article class="grid place-center h-[70vh] m-10 p-10 rounded-xl border border-1 text-white backdrop-blur">
-            <p class="italic p-10 bg-[maroon] text-white rounded-2xl mx-5 text-black h-10 my-10 justify-center text-xl flex items-center">Vous prenez le contrôle des décisions du héros! A chaque péripetie un choix sera disponible</p>
+            <p class="italic p-10 bg-[maroon] text-white rounded-2xl mx-5 text-black min-h-10 my-10 justify-center text-xl flex items-center">Vous prenez le contrôle des décisions du héros! A chaque péripetie un choix sera disponible</p>
             <ul class="list-disc p-10 bg-white rounded-2xl mx-5 text-black">
               <li class="text-xl mx-10">Chaque choix permet d'accéder à <span class="text-[green]">la suite de l'histoire</span></li>
               <li class="text-xl mx-10">Trois choix sont disponibles par page</li>
@@ -58,13 +60,13 @@
       </section>
       <section id="choices" class="text-3xl h-[90vh]">
         <h2 class="text-6xl w-[100%] bg-[rgba(255,80,70,.8)] backdrop-blur text-white p-10 my-10 text-center mx-auto">Choix</h2>
-        <article class="cards w-[90%] h-[70vh] flex items-center">
+        <article class="cards w-[90%] min-h-[70vh] flex items-center">
           <ul class="mx-auto flex justify-evenly">
             <li class="rounded w-[20%] p-5 bg-[rgba(0,100,0,.5)] backdrop-blur text-white">
               <a href="./Passe/1-1.html">
                 <figure>
                   <img src="https://picsum.photos/id/81/1980/1024" alt="">
-                  <figcaption class="flex text-center items-center h-[15vh] flex-col py-5">
+                  <figcaption class="flex text-center items-center min-h-[15vh] flex-col py-5">
                     <h2 class="text-2xl py-5">Aller dans le passé</h2>
                     <p>La porte indique </p>
                     <i class="py-2 text-[lime]"> Cherche Jadis la raison de ta présence</i>
@@ -73,7 +75,7 @@
               </a>
             </li>
             <li class="rounded w-[20%] p-5 bg-[rgba(0,0,0,.5)] backdrop-blur text-white">
-              <a href="./Present/">
+              <a href="./Present/index.html">
                 <figure>
                   <img src="https://picsum.photos/id/9/1980/1024" alt="">
                   <figcaption class="flex text-center items-center h-[15vh] flex-col py-5">
@@ -85,7 +87,7 @@
               </a>
             </li>
             <li class="rounded w-[20%] p-5 bg-[rgba(255,50,100,.4)] backdrop-blur text-white">
-              <a href="./Futur/">
+              <a href="./Futur/index.html">
                 <figure>
                   <img src="https://picsum.photos/id/1002/1980/1024" alt="">
                   <figcaption class="flex text-center items-center h-[15vh] flex-col py-5">
@@ -98,29 +100,31 @@
             </li>
           </ul>
       </section>
-      <section id="contact" class="h-screen grid items-center">
-        <h2 class="text-7xl text-center my-10 text-[yellow] drop-shadow backdrop-blur padding-1 rounded-xl mx-auto">Contact</h2>
-        <form action="" class="text-2xl w-[50%] mx-auto bg-[rgba(100,100,100,.3)] backdrop-blur-l border p-10 rounded-xl text-white">
-          <fieldset class="border p-5 backdrop-blur">
+      <section id="contact" class="h-[85vh] grid items-center">
+        <h2 class="text-5xl text-center text-[yellow] drop-shadow backdrop-blur padding-1 rounded-xl mx-auto">
+          Contact
+        </h2>
+        <form action="" class="w-[50%] mx-auto bg-[rgba(100,100,100,.3)] backdrop-blur-l border p-5 rounded-xl text-white">
+          <fieldset class="border p-1 backdrop-blur">
             <legend>Coordonnées</legend>
             <div class="my-10 text-center flex justify-between px-5">
               <label for="name">Nom de l'expéditeur</label>
               <input type="text" name="pseudo" id="name" placeholder="Expéditeur">
             </div>
-            <div class="my-10 text-center flex justify-between px-5">
+            <div class="my-1 text-center flex justify-between px-5">
               <label for="mail">Adresse e-mail</label>
               <input type="mail" name="e-mail" id="mail" placeholder="Adresse Mail">
             </div>
           </fieldset>
-          <fieldset class="border my-10 text-center backdrop-blur-xl">
+          <fieldset class="border my-1 text-center backdrop-blur-xl">
             <legend>Message</legend>
-            <label for="object" class="block my-5 mx-auto w-[90%]">Objet de votre contact</label>
+            <label for="object" class="block my-1 mx-auto w-[90%]">Objet de votre contact</label>
             <select name="objet" id="object" class="block my-5 mx-auto w-[50%]">
               <option value="">Option</option>
               <option value="">Option</option>
               <option value="">Option</option>
             </select>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Votre message" class="block my-5 mx-auto w-[50%] text-2xl"></textarea>
+            <textarea name="" id="" cols="30" rows="5" placeholder="Votre message" class="block my-5 mx-auto w-[50%] text-2xl"></textarea>
             <input type="submit" value="Envoyer votre message" class="p-5 m-5 bg-[maroon] text-[beige]  text-2xl hover:bg-[aliceblue] hover:text-[crimson]">
           </fieldset>
         </form>
