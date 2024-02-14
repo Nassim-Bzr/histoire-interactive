@@ -24,7 +24,7 @@
         <ul class="flex justify-between items-center gap-5">
           <li><a href="#contact">Contact</a></li>
           <li><a href="#">Connexion</a></li>
-          <li class="border border-black p-1">Inscription</li>
+          <li class="border border-black p-1 hover:cursor-pointer" id="inscription">Inscription</li>
         </ul>
       </nav>
     </header>
@@ -144,5 +144,6 @@
       <h2 class="text-center text-5xl">Credits</h2>
       <iframe id="credits" src="./assets/credits.html" class="p-10 rounded-xl w-[90%] mx-auto bg-white h-full overflow-y-scroll"></iframe>
     </footer>
+    <script>document.querySelector("#inscription").addEventListener("click", ()=>{alert("En cours de développement");})</script>
   </body>
 </html>
