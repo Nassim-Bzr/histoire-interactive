@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>End Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /*
+        main{
+            position:relative;
+            left:50vh;
+            top:50vh;
+        }
+        */
+    </style>
+</head>
+<body class="relative">
+    <main class="relative grid place-center w-screen h-full">
+        <section class="relative z-10 lg:left-[35vw] top-[40vh] min-w-[20vw] min-h-[20vh] lg:max-w-[30vw] max-h-[50vh] text-blue-400 rounded-xl border border-[skyblue] backdrop-blur-2xl bg-[rgba(0,0,255,.3)] grid place-center p-10">
+            <h1 class="xl:text-6xl lg:text-5xl md:text-4xl text-center">Félicitations!</h1>
+            <a href="index.html" class="text-center lg:text-3xl block my-10 text-white">Recommencer?</a>
+        </section>
+    </main>
+    <video src="./assets/videos/nature.mp4" muted autoplay class="absolute w-[100vw] h-[100vh] left-0 top-0 -z-10 object-cover"></video>
+    <audio src="./assets/bgm/from-earth-to-heaven-meditation-sound-142206.mp3" autoplay></audio>
+</body>
+</html>
