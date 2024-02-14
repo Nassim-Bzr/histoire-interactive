@@ -1,16 +1,149 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Histoire interactive</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body class="bg-green-100 h-20">
-  <a href="./Futur/index.html ">Goo !!</a>
-</body>
-
+<html lang="fr"  class="scroll-smooth overflow-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Histoire interactive</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  
+  <body class="bg-[url(./assets/images/bgInit2.webp)] bg-fixed bg-no-repeat bg-cover">
+    <header class="flex justify-between items-center bg-white p-5 px-[5%] fixed w-screen top-0 z-10 text-2xl">
+      <a href="./index.html">
+        <h1 class="text-black font-bold text-3xl">FR4N</h1>
+      </a>
+      <ul class="flex justify-between items-center gap-5">
+        <li><a href="#hero">A propos</a></li>
+        <li><a href="#rules">Règles</a></li>
+        <li><a href="#choices">Choix</a></li>
+        <li><a href="#credits">Crédits</a></li>
+      </ul>
+      <nav class="flex justify-between">
+        <ul class="flex justify-between items-center gap-5">
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#">Connexion</a></li>
+          <li class="border border-black p-1">Inscription</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="my-[10vh]">
+      <section id="landing" class="flex justify-around items-center h-[100vh]">
+        <article class="text-5xl bold text-center sticky top-0 left-0 scr backdrop-blur p-5 text-center text-white place-center">
+          <h2 class="text-bold">Les Échos du Temps : </h2>
+          <i class="text-2xl">À la Recherche de l'Origine Perdue</i>
+        </article>
+      </section>
+      <section id="hero" class="flex justify-around grid place-center my-5 h-[100vh] grid place-center">
+        <article class="flex justify-around items-center">
+          <img class="w-[30%] rounded-xl border-2" src="./assets/images/persoprincipal.png" alt="Illustration">
+          <aside class="overflow-y-scroll text-2xl bg-[rgba(0,0,0,.6)] text-white rounded-xl border border-1 shadow-lg backdrop-blur-xl w-[50%] min-h-[50vh] max-h-[80vh] grid items-center p-10">
+            <div class="text-5xl bold text-center sticky top-0 left-0 scr backdrop-blur p-5 rounded-2xl-2xl-0-0">
+              <h2>Les Échos du Temps : </h2>
+              <i class="text-2xl">À la Recherche de l'Origine Perdue</i>
+            </div>
+            <p class="py-5">
+              Dans les méandres d'une vie ordinaire, un jeune homme se trouve projeté dans une quête vertigineuse à la découverte de ses origines insoupçonnées. Un secret sombre et troublant émerge de l'ombre, ébranlant ses certitudes et éveillant en lui une soif inextinguible de vérité. Il s'engage alors dans un périple semé d'embûches, déterminé à percer le mystère qui entoure son existence.
+            </p>
+            <p class="py-5">
+              Au fil de son voyage, il découvre l'impensable : son sang n'est pas tout à fait humain, teinté d'une étrange couleur rosée à la texture gluante. Cette révélation déchirante le pousse à explorer des territoires inconnus, à défier des forces obscures et à affronter ses propres démons intérieurs.
+              Guidé par une volonté farouche et alimenté par le désir ardent de comprendre, il se lance dans une quête effrénée, traversant les époques et les dimensions pour démêler les fils de son histoire. Sur son chemin, il rencontre des alliés précieux, des amis fidèles prêts à le soutenir dans cette quête périlleuse.
+            </p>
+            <p class="py-5">
+              Mais au moment crucial, alors qu'il se tient au seuil du temps, le jeune homme doit faire un choix déterminant : vers quelle époque voyager pour découvrir la vérité sur ses origines ? Devra-t-il plonger dans les méandres du passé, explorer les secrets enfouis de ses ancêtres ? Ou bien se tourner vers l'avenir, défiant l'inconnu pour percer les mystères qui façonnent son destin ?  
+              Dans un ultime acte de bravoure, il se décide, conscient que le véritable voyage ne réside pas dans les époques traversées, mais dans la quête intérieure qui le guide. Et c'est avec cette certitude chevillée au cœur qu'il s'élance vers l'inconnu, prêt à affronter son destin avec courage et détermination.
+            </p>
+          </aside>
+        </article>
+      </section>
+      <section id="rules" class="h-screen py-10 bg-[rgba(255,100,100,.1)] flex-column justify-between w-[80%] mx-auto items-center">
+        <h2 class="text-4xl font-thin">Règles</h2>
+          <article class="grid place-center h-[70vh] m-10 p-10 rounded-xl border border-1 text-white backdrop-blur">
+            <p class="italic p-10 bg-[maroon] text-white rounded-2xl mx-5 text-black min-h-10 my-10 justify-center text-xl flex items-center">Vous prenez le contrôle des décisions du héros! A chaque péripetie un choix sera disponible</p>
+            <ul class="list-disc p-10 bg-white rounded-2xl mx-5 text-black">
+              <li class="text-xl mx-10">Chaque choix permet d'accéder à <span class="text-[green]">la suite de l'histoire</span></li>
+              <li class="text-xl mx-10">Trois choix sont disponibles par page</li>
+              <li class="text-xl mx-10">Chaque choix conduit ultimement à une des fins (<span class="text-[green]">Bonne</span>, <span class="text-[crimson]">Mauvaise</span> ou <span class="text-[royalblue]">neutre</span>)</li>
+            </ul>
+          </article>
+      </section>
+      <section id="choices" class="text-3xl h-[90vh]">
+        <h2 class="text-6xl w-[100%] bg-[rgba(255,80,70,.8)] backdrop-blur text-white p-10 my-10 text-center mx-auto">Choix</h2>
+        <article class="cards w-[90%] min-h-[70vh] flex items-center">
+          <ul class="mx-auto flex justify-evenly">
+            <li class="rounded w-[20%] p-5 bg-[rgba(0,100,0,.5)] backdrop-blur text-white">
+              <a href="./Passe/1-1.html">
+                <figure>
+                  <img src="./assets/images/forrest-mist.png" alt="">
+                  <figcaption class="flex text-center items-center min-h-[15vh] flex-col py-5">
+                    <h2 class="text-2xl py-5">Aller dans le passé</h2>
+                    <p>La porte indique </p>
+                    <i class="py-2 text-[lime]"> Cherche Jadis la raison de ta présence</i>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li class="rounded w-[20%] p-5 bg-[rgba(0,0,0,.5)] backdrop-blur text-white">
+              <a href="./Present/index.html">
+                <figure>
+                  <video src="./assets/videos/water.mp4" alt="video présent" muted autoplay></video>
+                  <figcaption class="flex text-center items-center h-[15vh] flex-col py-5">
+                    <h2 class="text-2xl py-5">Aller dans le présent</h2>
+                    <p>La porte indique </p>
+                    <i class="py-2 text-orange-400"> Cherche Ailleurs la raison de ta présence</i>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li class="rounded w-[20%] p-5 bg-[rgba(255,50,100,.4)] backdrop-blur text-white">
+              <a href="./Futur/index.html">
+                <figure>
+                  <img src="./assets/images/future_link.webp" alt="">
+                  <figcaption class="flex text-center items-center h-[15vh] flex-col py-5">
+                    <h2 class="text-2xl py-5">Aller dans le Futur</h2>
+                    <p>La porte indique </p>
+                    <i class="py-2 text-pink-200"> Cherche Demain la raison de ta présence</i>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+          </ul>
+      </section>
+      <section id="contact" class="h-[85vh] grid items-center">
+        <h2 class="text-5xl text-center text-[yellow] drop-shadow backdrop-blur padding-1 rounded-xl mx-auto">
+          Contact
+        </h2>
+        <form action="" class="w-[50%] mx-auto bg-[rgba(100,100,100,.3)] backdrop-blur-l border p-5 rounded-xl text-white">
+          <fieldset class="border p-1 backdrop-blur">
+            <legend>Coordonnées</legend>
+            <div class="my-10 text-center flex justify-between px-5">
+              <label for="name">Nom de l'expéditeur</label>
+              <input type="text" name="pseudo" id="name" placeholder="Expéditeur">
+            </div>
+            <div class="my-1 text-center flex justify-between px-5">
+              <label for="mail">Adresse e-mail</label>
+              <input type="mail" name="e-mail" id="mail" placeholder="Adresse Mail">
+            </div>
+          </fieldset>
+          <fieldset class="border my-1 text-center backdrop-blur-xl">
+            <legend>Message</legend>
+            <label for="object" class="block my-1 mx-auto w-[90%]">Objet de votre contact</label>
+            <select name="objet" id="object" class="block my-5 mx-auto w-[50%]">
+              <option value="">Option</option>
+              <option value="">Option</option>
+              <option value="">Option</option>
+            </select>
+            <textarea name="" id="" cols="30" rows="5" placeholder="Votre message" class="block my-5 mx-auto w-[50%] text-2xl"></textarea>
+            <input type="submit" value="Envoyer votre message" class="p-5 m-5 bg-[maroon] text-[beige]  text-2xl hover:bg-[aliceblue] hover:text-[crimson]">
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer class="h-[85vh] grid items-center w-[90%] mx-auto bg-[rgba(100,100,100,.3)] backdrop-blur-l border p-5 rounded-xl text-white">
+      <h2 class="text-center text-5xl">Credits</h2>
+      <iframe id="credits" src="./assets/credits.html" class="p-10 rounded-xl w-[90%] mx-auto bg-white h-full overflow-y-scroll"></iframe>
+    </footer>
+  </body>
 </html>
+
