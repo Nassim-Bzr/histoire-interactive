@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   
-  <body class="bg-[url(./assets/images/corridor.jpg)] bg-fixed">
-    <header class="flex justify-between items-center bg-white p-1 px-[5%] fixed w-screen top-0 z-10">
+  <body class="bg-[url(./assets/images/corridor.jpg)] bg-fixed bg-no-repeat bg-cover">
+    <header class="flex justify-between items-center bg-white p-5 px-[5%] fixed w-screen top-0 z-10 text-2xl">
       <a href="./index.html">
         <h1 class="text-black font-bold text-3xl">FR4N</h1>
       </a>
@@ -48,7 +48,7 @@
             </ul>
           </article>
       </section>
-      <section id="choices">
+      <section id="choices h-[100vh] text-3xl">
         <h2 class="text-4xl w-[100%] bg-[rgba(255,30,0,1)] p-10 my-10 text-center mx-auto">Choix</h2>
         <article class="cards">
           <ul class="mx-auto flex justify-around">
@@ -56,7 +56,7 @@
               <a href="./Passe/1-1.html">
                 <figure>
                   <img src="https://picsum.photos/id/81/1980/1024" alt="">
-                  <figcaption class="grid items-center">
+                  <figcaption class="flex text-center items-center h-[15vh] flex-col">
                     <h2 class="text-2xl">Aller dans le passé</h2>
                     <p>La porte indique </p>
                     <i> Cherche Jadis la raison de ta présence</i>
@@ -68,7 +68,7 @@
               <a href="./Present/">
                 <figure>
                   <img src="https://picsum.photos/id/9/1980/1024" alt="">
-                  <figcaption>
+                  <figcaption class="flex text-center items-center h-[15vh] flex-col">
                     <h2 class="text-2xl">Aller dans le présent</h2>
                     <p>La porte indique </p>
                     <i> Cherche Ailleurs la raison de ta présence</i>
@@ -91,29 +91,29 @@
           </ul>
       </section>
       <section id="contact" class="h-screen grid items-center">
-        <h2 class="text-4xl text-center my-10 text-[gold]">Contact</h2>
-        <form action="" class="w-50 mx-auto bg-[rgba(100,100,100,.3)] backdrop-blur border p-10 rounded-xl text-white">
+        <h2 class="text-7xl text-center my-10 text-[gold]">Contact</h2>
+        <form action="" class="w-[50%] mx-auto bg-[rgba(100,100,100,.3)] backdrop-blur border p-10 rounded-xl text-white">
           <fieldset class="border p-5">
             <legend>Coordonnées</legend>
-            <div class="my-10 text-center">
+            <div class="my-10 text-center flex justify-between px-5">
               <label for="name">Nom de l'expéditeur</label>
               <input type="text" name="pseudo" id="name" placeholder="Expéditeur">
             </div>
-            <div class="my-10 text-center">
+            <div class="my-10 text-center flex justify-between px-5">
               <label for="mail">Adresse e-mail</label>
               <input type="mail" name="e-mail" id="mail" placeholder="Adresse Mail">
             </div>
           </fieldset>
           <fieldset class="border my-10 text-center">
             <legend>Message</legend>
-            <label for="object" class="block my-5 mx-auto">Objet de votre contact</label>
-            <select name="objet" id="object" class="block my-5 mx-auto w-60">
+            <label for="object" class="block my-5 mx-auto w-[90%]">Objet de votre contact</label>
+            <select name="objet" id="object" class="block my-5 mx-auto w-[50%]">
               <option value="">Option</option>
               <option value="">Option</option>
               <option value="">Option</option>
             </select>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Votre message" class="block my-5 mx-auto"></textarea>
-            <input type="submit" value="Envoyer votre message" class="p-5 m-5 bg-[maroon] text-[beige] hover:bg-[aliceblue] hover:text-[crimson]">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Votre message" class="block my-5 mx-auto w-[50%] text-2xl"></textarea>
+            <input type="submit" value="Envoyer votre message" class="p-5 m-5 bg-[maroon] text-[beige]  text-2xl hover:bg-[aliceblue] hover:text-[crimson]">
           </fieldset>
         </form>
       </section>
