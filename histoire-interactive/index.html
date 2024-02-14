@@ -11,7 +11,7 @@
   
   <body class="bg-[url(./assets/images/bgInit2.webp)] bg-fixed bg-no-repeat bg-cover">
     <header class="flex justify-between items-center bg-white p-5 px-[5%] fixed w-screen top-0 z-10 text-2xl">
-      <a href="./index.html">
+      <a href="./index.html#">
         <h1 class="text-black font-bold text-3xl">FR4N</h1>
       </a>
       <ul class="flex justify-between items-center gap-5">
@@ -23,16 +23,16 @@
       <nav class="flex justify-between">
         <ul class="flex justify-between items-center gap-5">
           <li><a href="#contact">Contact</a></li>
-          <li><a href="#">Connexion</a></li>
-          <li class="border border-black p-1">Inscription</li>
+          <li><a href="#" class="wip">Connexion</a></li>
+          <li class="wip border border-black p-1 hover:cursor-pointer" id="inscription">Inscription</li>
         </ul>
       </nav>
     </header>
     <main class="my-[10vh]">
       <section id="landing" class="flex justify-around items-center h-[100vh]">
-        <article class="text-5xl bold text-center sticky top-0 left-0 scr backdrop-blur p-5 text-center text-white place-center">
-          <h2 class="text-bold">Les Échos du Temps : </h2>
-          <i class="text-2xl">À la Recherche de l'Origine Perdue</i>
+        <article class="text-5xl bold text-center sticky top-0 left-0 backdrop-blur p-5 text-center text-white place-center">
+          <h2 class="text-bold animate-pulse title">Les Échos du Temps : </h2>
+          <i class="text-2xl fadeIn">À la Recherche de l'Origine Perdue</i>
         </article>
       </section>
       <section id="hero" class="flex justify-around grid place-center my-5 h-[100vh] grid place-center">
@@ -87,7 +87,7 @@
             <li class="rounded w-[20%] p-5 bg-[rgba(0,0,0,.5)] backdrop-blur text-white">
               <a href="./Present/index.html">
                 <figure>
-                  <video src="./assets/videos/water.mp4" alt="video présent" muted autoplay></video>
+                  <img src="./assets/images/presentLink.webp" alt="Oiseau entouré de livres flottant dans le ciel">
                   <figcaption class="flex text-center items-center h-[15vh] flex-col py-5">
                     <h2 class="text-2xl py-5">Aller dans le présent</h2>
                     <p>La porte indique </p>
@@ -130,9 +130,9 @@
             <legend>Message</legend>
             <label for="object" class="block my-1 mx-auto w-[90%]">Objet de votre contact</label>
             <select name="objet" id="object" class="block my-5 mx-auto w-[50%]">
-              <option value="">Option</option>
-              <option value="">Option</option>
-              <option value="">Option</option>
+              <option value="contact">Prise de contact</option>
+              <option value="decouvrir">Découvrir nos créations</option>
+              <option value="travailler">Travailler avec nous</option>
             </select>
             <textarea name="" id="" cols="30" rows="5" placeholder="Votre message" class="block my-5 mx-auto w-[50%] text-2xl"></textarea>
             <input type="submit" value="Envoyer votre message" class="p-5 m-5 bg-[maroon] text-[beige]  text-2xl hover:bg-[aliceblue] hover:text-[crimson]">
@@ -142,8 +142,18 @@
     </main>
     <footer class="h-[85vh] grid items-center w-[90%] mx-auto bg-[rgba(100,100,100,.3)] backdrop-blur-l border p-5 rounded-xl text-white">
       <h2 class="text-center text-5xl">Credits</h2>
-      <iframe id="credits" src="./assets/credits.html" class="p-10 rounded-xl w-[90%] mx-auto bg-white h-full overflow-y-scroll"></iframe>
+      <iframe id="credits" src="./assets/credits.html" class="rounded-xl w-[90%] mx-auto bg-white h-full overflow-y-scroll"></iframe>
     </footer>
+    <audio src="./assets/bgm/better-day-186374.mp3" autoplay></audio>
+    <script>
+      for(let inscriptionLink of document.querySelectorAll(".wip")){
+        inscriptionLink.addEventListener("click", ()=>{
+          alert("En cours de développement");
+          inscriptionLink.classList.add("animate-[ping_1s_ease-out_forwards]")
+          }
+        )
+      }
+    </script>
   </body>
 </html>
 
